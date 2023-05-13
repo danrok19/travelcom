@@ -55,6 +55,7 @@
 
         .textDiv{
             padding: 2rem 0;
+            cursor:default;
 
             .smallText{
                 font-size: 13px;
@@ -119,9 +120,45 @@
                     background: blue;
                 }
             }
+            
+            .searchOptions{
+                position: absolute;
+                background: var(--gradientColor);
+                width: max-content;
+                bottom: -1.1rem;
+                column-gap: .8rem;
+                padding: 5px 1rem;
+                border-radius: 3rem;
+                left: 50%;
+                transform: translate(-50%);
+                justify-content: center;
+                cursor: pointer;
 
+                &:hover{
+                    background: var(--PrimaryColor);
+                }
+
+                .icon{
+                    font-size: 18px;
+                }
+            }
             
         }
 
+        .homeFooterIcons{
+            width: 100%;
+            justify-content: center;
+
+            .icon{
+                font-size: 20px;
+                margin: 0 5px;
+                color: var(--whiteColor);
+                font-size: 600;
+                transition: .2s ease-in-out;
+                &:hover{
+                    color: var(--PrimaryColor);
+                }
+            }
+        }
     }
 }

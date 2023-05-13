@@ -55,6 +55,7 @@
 }
 .home .homeContent .textDiv {
   padding: 2rem 0;
+  cursor: default;
 }
 .home .homeContent .textDiv .smallText {
   font-size: 13px;
@@ -114,4 +115,39 @@
 }
 .home .homeContent .cardDiv .input .input[type=range] {
   background: blue;
+}
+.home .homeContent .cardDiv .searchOptions {
+  position: absolute;
+  background: var(--gradientColor);
+  width: -moz-max-content;
+  width: max-content;
+  bottom: -1.1rem;
+  -moz-column-gap: 0.8rem;
+       column-gap: 0.8rem;
+  padding: 5px 1rem;
+  border-radius: 3rem;
+  left: 50%;
+  transform: translate(-50%);
+  justify-content: center;
+  cursor: pointer;
+}
+.home .homeContent .cardDiv .searchOptions:hover {
+  background: var(--PrimaryColor);
+}
+.home .homeContent .cardDiv .searchOptions .icon {
+  font-size: 18px;
+}
+.home .homeContent .homeFooterIcons {
+  width: 100%;
+  justify-content: center;
+}
+.home .homeContent .homeFooterIcons .icon {
+  font-size: 20px;
+  margin: 0 5px;
+  color: var(--whiteColor);
+  font-size: 600;
+  transition: 0.2s ease-in-out;
+}
+.home .homeContent .homeFooterIcons .icon:hover {
+  color: var(--PrimaryColor);
 }/*# sourceMappingURL=home.css.map */
