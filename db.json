@@ -1,0 +1,40 @@
+{
+    "data":[
+        {
+            "id": 1,
+            "imgSrc": "img",
+            "destTitle": "Bora Bora",
+            "location": "New Zealand",
+            "grade": "CULTURAL RELAX",
+            "fees": "$700",
+            "description": "The epitome of romance, Bora Bora is one of the best travel destinations in the world. This place is known for its luxurious stays and adventurous activities."
+        },
+        {
+            "id": 2,
+            "imgSrc": "img2",
+            "destTitle": "Machu Picchu",
+            "location": "Peru",
+            "grade": "CULTURAL RELAX",
+            "fees": "$600",
+            "description": "Huayna Picchu is a mountain in Peru, rising over Machu Picchu, the so-called Lost City of Incas. This place is popular among tourists as the surise from the Sun Gate is simply spectacular."
+        },
+        {
+            "id": 3,
+            "imgSrc": "img3",
+            "destTitle": "Bora Bora",
+            "location": "New Zealand",
+            "grade": "CULTURAL RELAX",
+            "fees": "$700",
+            "description": "The epitome of romance, Bora Bora is one of the best travel destinations in the world. This place is known for its luxurious stays and adventurous activities."
+        },
+        {
+            "id": 4,
+            "imgSrc": "img4",
+            "destTitle": "Machu Picchu",
+            "location": "Peru",
+            "grade": "CULTURAL RELAX",
+            "fees": "$600",
+            "description": "Huayna Picchu is a mountain in Peru, rising over Machu Picchu, the so-called Lost City of Incas. This place is popular among tourists as the surise from the Sun Gate is simply spectacular."
+        }
+    ]
+  }

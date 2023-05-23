@@ -3,13 +3,14 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 const dataApi = createApi({
     reducerPath: 'data',
     baseQuery: fetchBaseQuery({
-        baseUrl: 'http://localhost/3005'
+        baseUrl: 'http://localhost:3005'
     }),
     endpoints(builder){
         return {
             fetchData: builder.query({
                 providesTags: (result, error, arg) =>{
                     const tags = result.map((data) =>{
+                        //console.log("W Api:", data);
                         return { type: 'Data', id: data.id}
                     })
                     tags.push({type:'DataM'});
