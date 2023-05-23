@@ -1,6 +1,8 @@
 import React from 'react';
 import { useFetchDataQuery } from '../../store';
 import img from '../../Assets/landscape.png';
+import { HiOutlineClipboardCheck, HiOutlineLocationMarker } from 'react-icons/hi'
+import './main.css';
 
 const Main = () => {
 
@@ -20,7 +22,30 @@ const Main = () => {
         return (
           <div key={dataCard.id} className='singleDestination'>
             <div className='imageDiv'>
-              <img src={img} alt="img" />
+              <img src={img} alt={dataCard.destTitle} />
+            </div>
+            <div className="cardInfo">
+              <h4 className="destTitle">
+                {dataCard.destTitle}
+              </h4>
+              <span className="continent flex">
+                <HiOutlineLocationMarker />
+                <span className='name'>{dataCard.location}</span>
+              </span>
+              <div className='fees flex'>
+                <div className="grade">
+                  <span>{dataCard.grade}<small>+1</small></span>
+                </div>
+                <div className="price">
+                  <h5>{dataCard.fees}</h5>
+                </div>
+              </div>
+              <div className="desc">
+                <p>{dataCard.description}</p>
+              </div>
+              <button className="btn flex">
+                DETAILS <HiOutlineClipboardCheck className='icon'/>
+              </button>
             </div>
           </div>
         )
