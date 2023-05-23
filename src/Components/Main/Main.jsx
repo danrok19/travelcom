@@ -7,6 +7,26 @@ const Main = () => {
   const { data, error, isLoading } = useFetchDataQuery();
   // console.log("W Mainie: ", data);
 
+  let content;
+
+    if(isLoading){
+        content = <div className="text-white h-screen">Loading...</div>
+    }
+    else if(error){
+        content = <div className="text-white h-screen">Something has crashed...</div>
+    }
+    else{
+      content = data.map((dataCard) => {
+        return (
+          <div key={dataCard.id} className='singleDestination'>
+            <div className='imageDiv'>
+              <img src={img} alt="img" />
+            </div>
+          </div>
+        )
+      })
+    }
+
 
   return (
     <section className='main container section'>
@@ -17,15 +37,7 @@ const Main = () => {
       </div>
 
       <div className="secContent grid">
-        {data.map((dataCard) => {
-          return (
-            <div key={dataCard.id} className='singleDestination'>
-              <div className='imageDiv'>
-                <img src={img} alt="img" />
-              </div>
-            </div>
-          )
-        })}
+        {content}
       </div>
 
     </section>
