@@ -39,7 +39,7 @@ const Home = () => {
                 </div>
                 <div className="priceInput">
                     <div className="label_total flex">
-                        <label hrmlFor="price">Max price:</label>
+                        <label htmlFor="price">Max price:</label>
                         <h3 className="total">$5000</h3>
                     </div>
                     <div className="input flex">
