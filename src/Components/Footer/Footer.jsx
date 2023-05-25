@@ -1,12 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './footer.css';
 import video from '../../Assets/ocean-65560.mp4';
 import { FiChevronRight, FiSend } from 'react-icons/fi';
 import { MdOutlineTravelExplore } from 'react-icons/md';
 import { AiFillInstagram, AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai';
 import { FaTripadvisor } from 'react-icons/fa';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+
+    //using to create a little animation move
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, [])
+
     return (
         <section className="footer">
             <div className="videoDiv">
@@ -14,13 +22,13 @@ const Footer = () => {
             </div>
             <div className="secContent container">
                 <div className="contactDiv flex">
-                    <div className="text">
+                    <div data-aos='fade-up' className="text">
                         <small>KEEP IN TOUCH</small>
                         <h2>Travel with us</h2>
                     </div>
-                    <div className="inputDiv flex">
+                    <div data-aos='fade-up' className="inputDiv flex">
                         <input type="text" placeholder='Enter Email Address' />
-                        <button className='btn flex' type='submit'>
+                        <button data-aos='fade-up' className='btn flex' type='submit'>
                             SEND <FiSend className='icon' />
                         </button>
                     </div>
@@ -33,10 +41,10 @@ const Footer = () => {
                                 <MdOutlineTravelExplore className='icon' />Travelcom
                             </a>
                         </div>
-                        <div className="footerParagraph">
+                        <div data-aos='fade-up' className="footerParagraph">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </div>
-                        <div className="footerSocials">
+                        <div data-aos='fade-up' className="footerSocials">
                             <AiOutlineTwitter className='icon' />
                             <AiFillYoutube className='icon' />
                             <AiFillInstagram className='icon' />
@@ -46,7 +54,7 @@ const Footer = () => {
 
                     <div className="footerLinks grid">
 
-                        <div className="linkGroup">
+                        <div data-aos='fade-up' data-aos-duration='3000' className="linkGroup">
                             <span className="groupTitle">
                                 OUR AGENCY
                             </span>
@@ -77,7 +85,7 @@ const Footer = () => {
                             </li>
                         </div>
 
-                        <div className="linkGroup">
+                        <div data-aos='fade-up' data-aos-duration='4000' className="linkGroup">
                             <span className="groupTitle">
                                 PARTNERS
                             </span>
@@ -108,7 +116,7 @@ const Footer = () => {
                             </li>
                         </div>
 
-                        <div className="linkGroup">
+                        <div data-aos='fade-up' data-aos-duration='5000' className="linkGroup">
                             <span className="groupTitle">
                                 LAST MINUTE
                             </span>
